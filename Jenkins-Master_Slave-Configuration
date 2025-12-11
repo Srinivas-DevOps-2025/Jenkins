@@ -2,3 +2,11 @@
 
 Reference: https://github.com/ravdy/DevOps/blob/master/jenkins/Jenkins_Master_Slave_configuration.md 
 
+*********Installation*********
+1. Launch 2 EC2 VMs with t2.medium type on AWS.
+2. Install Same Java Version on both Master and Slave Machines.
+3. Then Install Jenkins w.r.t OS type(Ubuntu/Amazon Linux/Redhat).
+4. Access Jenkins via Master IP:8080 on browser.
+5. Setup the initial login configuration.
+
+*********Jenkins GUI Configuration*********
