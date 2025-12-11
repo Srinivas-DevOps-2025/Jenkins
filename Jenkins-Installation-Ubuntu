@@ -1,0 +1,25 @@
+**********Jenkins-Installation-Ubuntu*********
+
+Jenkins Version 2.541
+
+**********Java21 - Installation**********
+
+sudo apt install openjdk-21-jre-headless -y
+
+**********Jenkins - Installation**********
+
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian/jenkins.io-2023.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update -y
+sudo apt install jenkins -y
+
+**********Jenkins - Installation Status Check**********
+systemctl status jenkins
+
+# Should be Active and Running state
+
+Access via http://<IP>:8080
+
