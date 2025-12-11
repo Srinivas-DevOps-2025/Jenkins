@@ -1,1 +1,13 @@
 ***********Jenkins Common Errors***********
+1. Java Heap Out-Of-Memory Error (Jenkins JVM)
+
+Solution: 
+Increase JVM heap memory size by modifying JENKINS_JAVA_OPTIONS environment variable (Ex: -Xmx2g for 2GB)
+vi /etc/default/jenkins
+
+
+
+
+
+
+
