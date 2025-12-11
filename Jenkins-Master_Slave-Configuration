@@ -10,3 +10,8 @@ Reference: https://github.com/ravdy/DevOps/blob/master/jenkins/Jenkins_Master_Sl
 5. Setup the initial login configuration.
 
 *********Jenkins GUI Configuration*********
+Goto Manage Jenkins -> System Configuration - Nodes.
+
+
+
+
