@@ -1,6 +1,8 @@
 # Jenkins
 Jenkins for DevOps
 
+Document Location: I:\03.DevOps_Projects\Jenkins
+
 ******Contents******
 
 1. Jenkins-Installation-Ubuntu
