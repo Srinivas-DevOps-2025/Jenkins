@@ -1,0 +1,9 @@
+*******GitHub Webhook for triggering Jenkins Pipeline*******
+
+1. Open a Github repository and go to Webhooks.
+2. Click Add bebhook
+3. Provide payload URL(Jenkins Master URL - http://<IP>:8080/github-webhook)
+4. Click Add webhook
+5. Check for green tick mark - Then webhook is created successfully
+6. Then Go to Jenkins master server -> Job -> Triggers -> Github hook trigger for Gitscm pooling.
+7. make changes on Repo and commit -> Then Pipeline will trigger automatically.
