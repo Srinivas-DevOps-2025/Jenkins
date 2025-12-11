@@ -11,19 +11,34 @@ Go to -> vi /etc/default/jenkins
 Ex: JAVA_ARGS="-Djava.awt.headless=true -Xms512m -Xmx4096m"
 
 sudo systemctl restart jenkins
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
 2. Build stuck in queue.
 # Insufficient executors
 # Locked Resources
 # Hanging Build 
 
 Solution: 
+1. Check the executors available, node status, 
+2. Increase the no of executors on Jenkins.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+3. Permission Denied Error
+# No permissions to access a file/directory
+
+Solution: 
+Check the jenkins users has a enough permissions and adjust security settings if required.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+4. Jenkins slave agent disconnect
+# Due to network issues, firewall settings, JVM crashes on agent.
+
+Solution: 
+Check network connectivity, firewalls open, review logs for JVM crash reports or memory.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+5. 
 
 
 
 
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------
