@@ -1,14 +1,25 @@
 ***********Jenkins Common Errors***********
 1. Java Heap Out-Of-Memory Error (Jenkins JVM)
+#Out of memory can occur on both Master and Worker nodes. It depends on where the JVM or job is running.
+UI dies → Master OOM
+Build fails → Worker OOM
 
-This Error may occur either Master or Slave Machines.
 Solution: 
 Increase JVM heap memory size by modifying JENKINS_JAVA_OPTIONS environment variable (Ex: -Xmx2g for 2GB)
-vi /etc/default/jenkins
+Go to -> vi /etc/default/jenkins
 
 Ex: JAVA_ARGS="-Djava.awt.headless=true -Xms512m -Xmx4096m"
 
-2. 
+sudo systemctl restart jenkins
+
+
+
+2. Build stuck in queue.
+# Insufficient executors
+# Locked Resources
+# Hanging Build 
+
+Solution: 
 
 
 
